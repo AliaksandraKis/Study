@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.sos {
+    width: 100%
 }
 
 header {
@@ -17,7 +21,7 @@ header {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    width: 1170px;
+    width: 80%;
     height: 80px;
     margin: 0 auto;
 }
@@ -51,8 +55,214 @@ nav a{
 }
 
 nav a:hover{
+    cursor: url ('img/Vector.png'), auto;
     border-bottom: 2px solid #2196F3;
     color: #2196F3;
-    cursor: url
-    ;
+}
+
+nav a:active{
+    text-decoration: none;
+}
+
+.Menu2{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.cont a{
+    text-decoration: none;
+    color: #757575;
+    border-bottom: 2px solid transparent;
+}
+
+.cont a:hover{
+    cursor: url ('img/Vector.png'), auto;
+    border-bottom: 2px solid #2196F3;
+    color: #2196F3;  
+}
+ 
+.cont a:active{
+    text-decoration: none;
+}
+
+.blackpage {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: roboto;
+    height: 600px;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    background-color: #2F303A;
+    padding-top: 200px;
+}
+
+button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    top: 430px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.base {
+    display: flex;
+    justify-content: space-around;
+    padding: 79px 200px;
+}
+
+.textbase {
+    margin: 15px;
+}
+
+.textbase h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.textbase p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-top: 10px;
+}
+
+.what {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+
+.info img{
+    margin: 15px;
+}
+
+.sp {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    margin-top: 60px;
+}
+
+.our {
+    display: flex;
+    background-color: #F5F4FA;
+    padding: 10px 200px;
+    justify-content: space-between;
+}
+
+.ourspeaker {
+    margin: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.ourspeakername {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.prof {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding-bottom: 30px;
+}
+
+.Finish {
+    padding-top: 30px;
+    background: #2F303A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-left: 215px;
+    padding-bottom: 60px;
+}
+
+.Finish a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid transparent;
+}
+
+.jblack {
+    padding-top: 20px;
 }
