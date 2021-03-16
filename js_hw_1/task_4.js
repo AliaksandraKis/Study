@@ -10,14 +10,16 @@
 дроидов, на счету осталось [число] кредитов.'.*/
 
 
-let credits = 35500
-let pricePerDroid = 3000
+let credits = 35500;
+let pricePerDroid = 3000;
 let message = prompt ('Сколько ремонтных дроидов хотите купить?')
+let totalPrice = message * pricePerDroid;
+let ost = credits - totalPrice;
 if(message == null){
-    alert('Отменено пользователем!')
+    console.log('Отменено пользователем!')
     }
-let result = totalPrice
-if(message = Number){
-    totalPrice = Number * pricePerDroid
+else if (credits < totalPrice ) {
+    console.log( 'Недостаточно средств на счету!')
 }
-console.log(result)
+else if (totalPrice < credits) {console.log (`Вы купили ${message} дроидов, на счету осталось ${credits - totalPrice} кредитов.`)
+}
