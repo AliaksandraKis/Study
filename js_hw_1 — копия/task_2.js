@@ -5,11 +5,40 @@
 с вами свяжется менеджер". Проверь работоспособность кода с разными значениями переменной ordered, например 20, 80 и 130.
 const total = 100; const ordered = 50;*/
 
+/*variety_1
+     const total = 100
+     const ordered = 50 
+     if (total < ordered) {
+     console.log("На складе недостаточно твоаров!");
+     } 
+     else if (total >= ordered) { 
+     console.log("Заказ оформлен, с Вами свяжется менеджер");
+     }
+     */
+
+/*variety_2
+     const total = 100
+     const ordered = 20
+     if (total < ordered) {
+     console.log("На складе недостаточно твоаров!");
+     } 
+     else if (total >= ordered) { 
+     console.log("Заказ оформлен, с Вами свяжется менеджер");
+     }
+     */
+
+/*variety_3
+     const total = 100
+     const ordered = 80
+if (total < ordered) {
+ console.log("На складе недостаточно твоаров!");
+     } 
+else if (total >= ordered) { 
+console.log("Заказ оформлен, с Вами свяжется менеджер");
+     }
+     */
 
      const total = 100
-     //const ordered = 50 
-     //const ordered = 20
-     //const ordered = 80
      const ordered = 130
      if (total < ordered) {
      console.log("На складе недостаточно твоаров!");
@@ -17,4 +46,4 @@ const total = 100; const ordered = 50;*/
      else if (total >= ordered) { 
      console.log("Заказ оформлен, с Вами свяжется менеджер");
      }
-
+     
