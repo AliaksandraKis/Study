@@ -1,6 +1,5 @@
 // Задание 6
 // Напиши скрипт со следующим функционалом:
-// 10:53
 // При загрузке страницы пользователю предлагается 
 // в prompt ввести число. Ввод сохраняется в переменную 
 // input и добавляется в массив чисел numbers.
@@ -20,6 +19,28 @@
 //  пользователю предлагается ввести число в prompt.
 
 
- let input;
-const numbers = [];
+
+let numbers = [];
+let input;
 let total = 0;
+for(let i = 0; i < 1 ; i+= 1){
+        let input = +prompt('Введите число');
+         if (isNaN(input)) {
+             alert('Было введено не число, попробуйте еще раз');
+         
+         } 
+            if (input === 0) {
+            break;
+            }
+             else if (!isNaN(input)) {
+             numbers.push(input);
+         }
+     }
+     function sumArray(arr){
+         for(let i = 0;i<arr.length;i++){
+             total += arr[i];
+         }
+         return total;
+     }
+
+ console.log(sumArray(numbers));
