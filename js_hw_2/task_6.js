@@ -21,26 +21,31 @@
 
 
 let numbers = [];
-let input;
 let total = 0;
 for(let i = 0; i < 1 ; i+= 1){
-        let input = +prompt('Введите число');
-         if (isNaN(input)) {
-             alert('Было введено не число, попробуйте еще раз');
-         
-         } 
-            if (input === 0) {
-            break;
-            }
-             else if (!isNaN(input)) {
-             numbers.push(input);
-         }
-     }
-     function sumArray(arr){
-         for(let i = 0;i<arr.length;i++){
-             total += arr[i];
+    let numb = prompt('Введите число');
+    if(numb === null){
+        break;
+        }
+    else {
+        numbers.push(numb);
+    if(isNaN(numb))
+        {
+            i-=1;
+            alert('Введено не число, попробуйте еще раз');
+        }
+    else{
+            i-=1;
+        }
+    }
+}
+
+     function summa(arr){
+        let result = arr.map(parseFloat);
+         for(let i = 0;i<result.length;i+=1){
+             total += result[i];
          }
          return total;
      }
 
- console.log(sumArray(numbers));
+ console.log(summa(numbers));
