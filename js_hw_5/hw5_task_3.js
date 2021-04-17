@@ -9,6 +9,25 @@
 //есть, удаляет его из текущих
 
 
+
+
+class Storage {
+  constructor(items){
+    this.items = items;
+  }
+  getItems() {
+    return this.items;
+  }
+  addItem(item) {
+    this.items.push(item);
+  }
+  removeItem(item) {
+    let tovar = this.items.indexOf(item);
+    if (tovar != -1) {
+      this.items.splice(tovar, 1);
+    }
+  }
+}
 const storage = new Storage([
   'Нанитоиды',
   'Пролонгер',
