@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>user</p>
+    <!-- <script src="./hw7_task_1.js" type="module"></script> -->
+    <!-- <script src="/js_hw_7/hw7_task_2.js" type="module"></script> -->
+    <!-- <script src="/js_hw_7/hw7_task_3.js" type="module"></script> -->
+    <!-- <script src="/js_hw_7/hw7_task_4.js" type="module"></script> -->
+    <!-- <script src="/js_hw_7/hw7_task_5.js" type="module"></script>  -->
+    <script src="/js_hw_7/hw7_task_6.js" type="module"></script> 
+    <ul id="categories">
+        <li class="item">
+          <h2>Животные</h2>
+          <ul>
+            <li>Кот</li>
+            <li>Хомяк</li>
+            <li>Лошадь</li>
+            <li>Попугай</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Продукты</h2>
+          <ul>
+            <li>Хлеб</li>
+            <li>Петрушка</li>
+            <li>Творог</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Технологии</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </li>
+      </ul>
+    <ul id="ingredients"></ul>
+    <ul id="gallery"></ul>
+    <div id="counter">
+      <button type="button" data-action="decrement" class="minus">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment" class="plus">+1</button>
+    </div>
+    <input type="text" placeholder="Ваше имя?" id="name-input" />
+    <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    <style>
+      #validation-input {
+      border: 3px solid #bdbdbd;
+      }
+      #validation-input.valid {
+        border-color: #4caf50;
+      }
+      #validation-input.invalid {
+        border-color: #f44336;
+      }
+    </style>
+    <input
+       type="text"
+       id="validation-input"
+       data-length="9"
+       placeholder="Введи 9 символов" />
+</body>
+</html>
